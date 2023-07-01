@@ -50,7 +50,7 @@ nav {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 .nav {
@@ -198,8 +198,9 @@ i {
         grid-template-columns: 1.3fr 9fr;
     }
 
+    
     nav {
-        display: block;
+        display: flex;
     }
 }
 
