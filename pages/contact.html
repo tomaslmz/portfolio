@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+</head>
+<body>
+    <section class="menu">
+        <header class="logo">
+            <span class="effect"><a href="../index.html" class="link-logo">T</a></span>
+            <br>
+            <button class="btn-menu" onclick="openMenu()"><i class="material-icons" id="menu">menu</i></button>
+        </header>
+        <nav>
+            <a href="../index.html"><button class="btn nav">Home</button></a>
+            <a href="./aboutme.html"><button class="btn nav">About me</button></a>
+            <a href="./myprojects.html"><button class="btn nav">My projects</button></a>
+            <a href="./contact.html"><button class="btn nav selected">Contact</button></a>
+        </nav>
+    </section>
+    <section class="body">
+        <main>
+            <article>
+                <div class="contact">
+                    <span class="html-tag">&lt;contact&gt;</span>
+                    <p class="text">
+                        If you want any contact with me, here it is:
+                        <div class="btn-container">
+                            <button class="btn-contact discord" onclick="copyText('@inkma')"></button>
+                            <a href="https://github.com/tomaslmz" target="_blank"><button class="btn-contact github"></button></a>
+                            <button class="btn-contact email" onclick="copyText('tomas153lm@gmail.com')"></button>
+                        </div>
+                    </p>
+                    <span class="html-tag">&lt;/contact&gt;</span>
+                </div>
+            </article>
+        </main>
+    </section>    
+    <script>
+        var isMenuOpen = false;
+
+        const openMenu = () => {
+            if(!isMenuOpen) {
+                document.querySelector("nav").style.display = "block";
+                document.getElementById("menu").innerHTML = "close";
+                isMenuOpen = true;
+            } else {
+                document.querySelector("nav").style.display = "none";
+                document.getElementById("menu").innerHTML = "menu";
+                isMenuOpen = false;
+            }
+        }
+
+        const copyText = (str) => {
+            const el = document.createElement('textarea');
+            el.value = str;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            switch(str) {
+                case '@inkma':
+                    alert('Discord username copied!');
+                break;
+                case 'tomas153lm@gmail.com':
+                    alert('Email copied!');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
