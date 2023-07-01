@@ -31,6 +31,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    height: 100vh;
     align-items: center;
     gap: 30px;
 }
@@ -142,6 +143,7 @@ i {
     main {
         justify-content: start;
         margin-top: 30px;
+        height: auto;
     }
 
     nav {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../style/aboutme.css">
-    <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
 <body>
@@ -13,13 +12,13 @@
         <header class="logo">
             <span class="effect"><a href="../index.html" class="link-logo">T</a></span>
             <br>
-            <button class="btn-menu" onclick="openMenu()"><i class="material-icons" id="menu">menu</i></button>
+            <button class="btn-menu" onclick="openMenu()" name="a button to open the menu"><i class="material-icons" id="menu">menu</i></button>
         </header>
         <nav>
-            <a href="../index.html"><button class="btn nav">Home</button></a>
-            <a href="./aboutme.html"><button class="btn nav selected">About me</button></a>
-            <a href="./myprojects.html"><button class="btn nav">My projects</button></a>
-            <a href="./contact.html"><button class="btn nav">Contact</button></a>
+            <a href="../index.html"><button class="btn nav" name="button to go to home">Home</button></a>
+            <a href="./aboutme.html"><button class="btn nav selected" name="button to go to about me">About me</button></a>
+            <a href="./myprojects.html"><button class="btn nav" name="button to go to my projects">My projects</button></a>
+            <a href="./contact.html"><button class="btn nav" name="button to make contact with me">Contact</button></a>
         </nav>
     </section>
     <section class="body">
@@ -28,7 +27,7 @@
                 <div class="aboutme">
                     <span class="html-tag">&lt;aboutme&gt;</span>
                     <p class="text">
-                        Hello! My name is Tomás and I'm a web developer.  I'm 18 years old and I have so much passion for the development. I started to study about that in my 13 years old and here I am. I don't have problem to work with front-end or back-end, I like both. My languages, at the moment, are portuguese, english and spanish. Yes, I'm brazilian so that's why most of my projects is in portuguese.
+                        Hello! My name is Tomás and I'm a web developer.  I'm 18 years old and I have so much passion for the development. I started to study about that in my 13 years old and here I am. I don't have problem to work with front-end or back-end, I like both. My principal languages, at the moment, are portuguese, english and spanish. Yes, I'm brazilian so that's why most of my projects is in portuguese.
                     </p>
                     <span class="html-tag">&lt;/aboutme&gt;</span>
                 </div>
@@ -37,7 +36,7 @@
                 <div class="aboutme">
                     <span class="html-tag">&lt;myexperience&gt;</span>
                     <p class="text">
-                        At the moment, i don't have any profissional experience, but I try everyday to evolve my skills with several projects, if you want to see my, just go to <a href="#">My Projects</a>.
+                        At the moment, i don't have any profissional experience, but I try everyday to evolve my skills with several projects, if you want to see my, just go to <a href="./myprojects.html">My Projects</a>.
                     </p>
                     <span class="html-tag">&lt;/myexperience&gt;</span>
                 <div>
@@ -58,6 +57,12 @@
                 isMenuOpen = false;
             }
         }
+
+        addEventListener("resize", (event) => {
+            document.querySelector("nav").style.display = "block";
+            isMenuOpen = true;
+            document.getElementById("menu").innerHTML = "close";
+        });
     </script>
 </body>
 </html>

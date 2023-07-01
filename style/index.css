@@ -55,6 +55,7 @@ main {
 }
 
 .title {
+    margin-left: 30px;
     font-size: 5em;
     color: white;
 }
