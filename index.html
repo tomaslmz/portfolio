@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <section class="menu">
         <header class="logo">
-            <span class="effect">T</span>
+            <span class="effect"><a href="./index.html" class="link-logo">T</a></span>
         </header>
         <nav>
-            <a href="#"><button class="btn nav">About me</button></a>
+            <a href="./pages/aboutme.html"><button class="btn nav">About me</button></a>
             <a href="#"><button class="btn nav">My projects</button></a>
             <a href="#"><button class="btn nav">Contact</button></a>
         </nav>
@@ -21,7 +21,14 @@
         <main>
             <h1 class="title">Hi,<br>I'm <span class="effect">T</span>omás,<br>a web developer</h1>
 
-            <p class="description">&lt;my technologies&gt;<br>JavaScript, HTML5/CSS3, NodeJS...<br>&lt;/my technologies&gt;</p>
+            <!-- <p class="description">&lt;mytechnologies&gt;<br>JavaScript, HTML5/CSS3, NodeJS...<br>&lt;/my technologies&gt;</p> -->
+            <div class="description">
+                <span class="html-tag">&lt;mytechnologies&gt;</span>
+                <p class="text">
+                    JavaScript, HTML5/CSS3, NodeJS...
+                </p>
+                <span class="html-tag">&lt;/my technologies&gt;</span>
+            </div>
             <a href="#"><button class="btn contact">Contact me</button></a>
         </main>
     </section>    
