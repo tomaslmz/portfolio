@@ -3,6 +3,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,8 +11,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1.3fr 9fr;
 }
 
 .menu {
@@ -20,17 +19,14 @@ body {
 
 .body {
     background-color: rgb(32, 30, 30);
-}
-
-::-webkit-scrollbar {
-    display: none;
+    overflow-x:visible
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    height: 100vh;
     align-items: center;
     gap: 30px;
 }
@@ -42,7 +38,7 @@ main {
 
 
 .logo {
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
     background-color: rgb(17, 17, 17);
 }
@@ -84,18 +80,39 @@ nav {
     color: white;
 }
 
-.aboutme {
-    width: 50vw;
+.myprojects {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    height: 85vh;
+    padding-right: 33px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(155, 155, 155);
+    overflow-x: scroll;
 }
 
-.text {
+::-webkit-scrollbar {
+    display: none;
+}
+
+.project {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(155, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 10px;
+    border: rgb(54, 53, 53)1px solid;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a {
@@ -116,7 +133,40 @@ article {
 }
 
 .html-tag {
+    grid-column: span 3;
     color: #5D9CC9;
+}
+
+img {
+    width: 350px;
+}
+
+
+.project-btn {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    color: rgb(0, 250, 175);
+    border: rgb(0, 250, 175) 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.project-btn:hover {
+    background-color: rgb(190, 255, 236);
+    color: black;
+}
+
+.disclaimer {
+    font-family: 'Courier New', Courier, monospace;
+    color: #4A5642;
+}
+
+.link-comment {
+    color: #4A5642;
 }
 
 i {
@@ -129,6 +179,25 @@ i {
     border: none;
 }
 
+@media screen and (min-width: 1400px) {
+    .myprojects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .myprojects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1.3fr 9fr;
+    }
+}
+
 @media screen and (max-width: 600px) {
     body {
         display: flex;
@@ -137,11 +206,6 @@ i {
 
     .btn-menu {
         display: inline;
-    }
-
-    main {
-        justify-content: start;
-        margin-top: 30px;
     }
 
     nav {

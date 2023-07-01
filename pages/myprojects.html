@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style/myprojects.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+</head>
+<body>
+    <section class="menu">
+        <header class="logo">
+            <span class="effect"><a href="../index.html" class="link-logo">T</a></span>
+            <br>
+            <button class="btn-menu" onclick="openMenu()"><i class="material-icons" id="menu">menu</i></button>
+        </header>
+        <nav>
+            <a href="../index.html"><button class="btn nav">Home</button></a>
+            <a href="./aboutme.html"><button class="btn nav">About me</button></a>
+            <a href="./myprojects.html"><button class="btn nav selected">My projects</button></a>
+            <a href="#"><button class="btn nav">Contact</button></a>
+        </nav>
+    </section>
+    <section class="body">
+        <main>
+            <article>
+                <span class="html-tag">&lt;myprojects&gt;</span>
+                <div class="myprojects">
+                    
+                    <div class="project">
+                        <img src="../public/images/projects/adivinhe-o-numero-2.webp" alt="Guess the number image">
+                        <h1>Guess the number</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/apple-clicker-2.webp" alt="Apple clicker 2 image">
+                        <h1>Apple Clicker 2</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/calculadora.webp" alt="A calculator image">
+                        <h1>Calculator</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/cordel-moderno.webp" alt="Cordel moderno">
+                        <h1>Cordel Moderno</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/login.webp" alt="A login page responsive">
+                        <h1>Login Page &#40;responsive test&#41;</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/apple-clicker.webp" alt="Apple clicker 1">
+                        <h1>Apple Clicker &#40;OLD VERSION&#41;</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/adivinhe-o-numero.webp" alt="Guess the number">
+                        <h1>Guess the number &#40;OLD VERSION&#41;</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/redes-sociais.webp" alt="A social media page">
+                        <h1>Social Media</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="project">
+                        <img src="../public/images/projects/curiosidades-da-tecnologia.webp" alt="Technology trivia">
+                        <h1>Technology Trivia</h1>
+                        <button class="project-btn">Test the project!</button>
+                    </div>
+                    <div class="disclaimer">
+                        <p>// I have more projects in my <a href="https://github.com/tomaslmz" class="link-comment" target="_blank">GitHub</a> :&#41;</p>
+                    </div>
+                </div>
+                <span class="html-tag">&lt;/myprojects&gt;</span>
+            </article>
+        </main>
+    </section>    
+    <script>
+        var isMenuOpen = false;
+
+        const openMenu = () => {
+            if(!isMenuOpen) {
+                document.querySelector("nav").style.display = "block";
+                document.getElementById("menu").innerHTML = "close";
+                isMenuOpen = true;
+            } else {
+                document.querySelector("nav").style.display = "none";
+                document.getElementById("menu").innerHTML = "menu";
+                isMenuOpen = false;
+            }
+        }
+    </script>
+</body>
+</html>
