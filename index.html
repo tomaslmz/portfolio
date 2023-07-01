@@ -51,9 +51,11 @@
         }
 
         addEventListener("resize", (event) => {
-            document.querySelector("nav").style.display = "block";
-            isMenuOpen = true;
-            document.getElementById("menu").innerHTML = "close";
+            if(screen.width > 1000) {
+                document.querySelector("nav").style.display = "block";
+                isMenuOpen = true;
+                document.getElementById("menu").innerHTML = "close";
+            }
         });
     </script>
 </body>

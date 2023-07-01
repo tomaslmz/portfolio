@@ -197,6 +197,10 @@ i {
         display: grid;
         grid-template-columns: 1.3fr 9fr;
     }
+
+    nav {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
