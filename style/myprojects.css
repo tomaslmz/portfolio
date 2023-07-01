@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    background-color: rgb(32, 30, 30);
     height: 100vh;
 }
 
@@ -203,6 +204,27 @@ i {
         display: flex;
         flex-direction: column;
     }
+
+    img {
+        width: 200px;
+    }
+
+    .project {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-self: center;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 275px;
+        padding: 10px;
+        border: rgb(54, 53, 53)1px solid;
+    }
+
 
     .btn-menu {
         display: inline;
