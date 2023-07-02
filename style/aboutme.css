@@ -12,6 +12,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1.3fr 9fr;
+    background-color: rgb(32, 30, 30);
 }
 
 .menu {
