@@ -61,7 +61,7 @@ main {
 }
 
 .description {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
 }
 
@@ -86,7 +86,7 @@ nav {
     height: 50px;
     background-color: transparent;
     border: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
     cursor: pointer;
     display: inline-block;
@@ -118,7 +118,7 @@ nav {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 a {

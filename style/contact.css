@@ -66,7 +66,7 @@ nav {
     height: 50px;
     background-color: transparent;
     border: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
     cursor: pointer;
     display: inline-block;
@@ -93,7 +93,7 @@ nav {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
 }
 

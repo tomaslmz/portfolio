@@ -58,7 +58,7 @@ nav {
     height: 50px;
     background-color: transparent;
     border: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
     cursor: pointer;
     display: inline-block;
@@ -89,7 +89,7 @@ nav {
     grid-auto-rows: 1fr;
     height: 85vh;
     padding-right: 33px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
     overflow-x: scroll;
 }
@@ -102,7 +102,7 @@ nav {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ nav {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -162,7 +162,7 @@ img {
 }
 
 .disclaimer {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: #4A5642;
 }
 
@@ -218,7 +218,7 @@ i {
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 20px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family:Arial, Helvetica, sans-serif;
         display: flex;
         justify-self: center;
         font-size: 12px;
