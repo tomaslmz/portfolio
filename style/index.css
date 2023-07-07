@@ -27,6 +27,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
     align-items: center;
     gap: 30px;
 }
@@ -61,7 +62,7 @@ main {
 }
 
 .description {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
 }
 
@@ -83,10 +84,10 @@ nav {
 
 .nav {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: transparent;
     border: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(155, 155, 155);
     cursor: pointer;
     display: inline-block;
@@ -118,7 +119,7 @@ nav {
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 a {
